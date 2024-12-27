@@ -20,3 +20,24 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* mode flex dans la bare de navigation */
+.navbar-nav {
+  justify-content: flex-end;
+}
+/* modification du font pour la class */
+.navbar-brand{
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+/* ne peux pas modifier l'arrierre plan? */
+html{
+  background: url(../../../photo/vegeta.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
