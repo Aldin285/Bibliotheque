@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio\\Biblio.csproj",
-      "projectName": "Biblio",
-      "projectPath": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio\\Biblio.csproj",
+      "projectUniqueName": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio_Exercice\\Biblio_Exercice.csproj",
+      "projectName": "Biblio_Exercice",
+      "projectPath": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio_Exercice\\Biblio_Exercice.csproj",
       "packagesPath": "C:\\Users\\Alla-Eddine.Boukabou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio\\obj\\",
+      "outputPath": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio_Exercice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alla-Eddine.Boukabou\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -57,9 +57,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

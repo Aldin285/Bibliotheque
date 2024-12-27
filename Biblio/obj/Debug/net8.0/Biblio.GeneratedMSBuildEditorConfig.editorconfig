@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Biblio
 build_property.RootNamespace = Biblio
-build_property.ProjectDir = C:\Users\Alla-Eddine.Boukabou\Downloads\Cours 2024-2025\C#\Biblio\
+build_property.ProjectDir = c:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Alla-Eddine.Boukabou\Downloads\Cours 2024-2025\C#\Biblio
+build_property.MSBuildProjectDirectory = c:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/biblio1.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/biblio1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmlibGlvMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/Error.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/Index.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/Privacy.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/_ViewImports.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/_ViewStart.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alla-Eddine.Boukabou/Downloads/Cours 2024-2025/C\#/Biblio/Pages/Shared/_Layout.cshtml]
+[c:/Users/Alla-Eddine.Boukabou/Documents/GitHub/Bibliotheque/Biblio/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vlz62m3fqd

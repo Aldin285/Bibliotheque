@@ -1,0 +1,15 @@
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\bin\Debug\net8.0\Biblio_Exercice.exe
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\bin\Debug\net8.0\Biblio_Exercice.deps.json
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\bin\Debug\net8.0\Biblio_Exercice.runtimeconfig.json
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\bin\Debug\net8.0\Biblio_Exercice.dll
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\bin\Debug\net8.0\Biblio_Exercice.pdb
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.AssemblyInfoInputs.cache
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.AssemblyInfo.cs
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.csproj.CoreCompileInputs.cache
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.sourcelink.json
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.dll
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\refint\Biblio_Exercice.dll
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.pdb
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\Biblio_Exercice.genruntimeconfig.cache
+C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\Biblio_Exercice\obj\Debug\net8.0\ref\Biblio_Exercice.dll

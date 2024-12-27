@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Livres>
+  <Livre ID="2">
+    <Titre>SharkNado</Titre>
+    <Auteur>shark</Auteur>
+    <Date_de_Publication>02/02/2010</Date_de_Publication>
+  </Livre>
+  <Livre ID="3">
+    <Titre>SharkNado 2</Titre>
+    <Auteur>shark</Auteur>
+    <Date_de_Publication>01/14/2020</Date_de_Publication>
+  </Livre>
+  <Livre ID="4">
+    <Titre>aze</Titre>
+    <Auteur>aze</Auteur>
+    <Date_de_Publication>unknown</Date_de_Publication>
+  </Livre>
+  <Livre ID="1">
+    <Titre>Le Petit Prince</Titre>
+    <Auteur>Antoine de Saint-Exupéry</Auteur>
+    <Date_de_Publication>1943</Date_de_Publication>
+  </Livre>
+</Livres>
