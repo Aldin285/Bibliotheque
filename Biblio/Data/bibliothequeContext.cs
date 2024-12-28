@@ -17,5 +17,12 @@ public class bibliothequeContext : DbContext
     {
         optionsBuilder.UseSqlite(@"Data source=bibliotheque.db");
     }
+
+    // puiseque la methode Seed() renvoie une instance (objet, variable) de type ModeBuilder,
+    // on peut la relié à la methode OnModelCreating qui utilise le meme type d'instance
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfiguration(new bibliothequeConfiguration()).Seed();
+    }
     
 }
