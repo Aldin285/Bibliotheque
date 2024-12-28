@@ -1,7 +1,11 @@
+using Biblio.Data ;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// permet de pertager le contenu (données) dans tout les elements du projet
+builder.Services.AddDbContext<bibliothequeContext>();
 
 var app = builder.Build();
 
