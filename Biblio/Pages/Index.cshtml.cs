@@ -1,19 +1,20 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Biblio.Data;
+using Biblio.Bibliotheque;
+using Microsoft.EntityFrameworkCore;
 
 namespace Biblio.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    private readonly bibliothequeContext context;
 
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
-
-    public void OnGet()
-    {
-
-    }
+    public IndexModel(bibliothequeContext context)=>
+        this.context=context;
+    
+        
+    public List<Livre> Livres { get; set; } = new ();
+    public async Task OnGetAsync()=>
+        Livres = await context.Livres.ToListAsync();
+    
 }

@@ -1,29 +1,57 @@
 @page
-@model Biblio.Pages.biblio1
+@model Biblio.Pages.biblio1Model
 @{
     ViewData["Title"] = "La bibliothèque";
 
 }
-
 <h1>@ViewData["Title"]</h1>
 
-<style>
+<form method="post">
+    @* Attention: fait en sorte que name est suivi du nom de parametre qui convient (attention aux erreure d'ortographes) *@
+    <input type="number" name="Id"/>
+    <input type="text" name="Titre"/>
+    <input type="text" name="Auteur"/>
+    <input type="text" name="date_Publication"/>
 
-    html{
-        background: url(C:\Users\Alla-Eddine.Boukabou\Documents\GitHub\Bibliotheque\photo\vegeta.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-    
+    <button type="submit">Ajouter</button>
 
-</style>
+</form>
 
-<div>
-    <h1>Hakouna matata </h1>
-    <h1>@Model.TimeOfDay</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Date de publication</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var LIVRE in Model.Livres){
+            <tr>
+                <td>@LIVRE.Id</td>
+                <td>@LIVRE.Titre</td>
+                <td>@LIVRE.Auteur</td>
+                <td>@LIVRE.Date_Publication</td>
+            </tr>
+        }
+    </tbody>
 
-   
-</div>
-      
+</table>
+
+
+    @* @foreach (var LIVRE in Model.Livres)
+    {
+        <div class="col-3 p-1">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@LIVRE.Titre</h5>
+                    <p class="card-text">@LIVRE.Auteur</p>
+                    <div class="d-flex justify-content-between">
+                    <span class="card-text">@LIVRE.Date_Publication</span>
+                    <a class="btn btn-danger btn-sm" asp-page="/Order" asp-route-id="@LIVRE.Id">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    } *@

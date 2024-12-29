@@ -1,41 +1,48 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using Biblio.Data;
+using Biblio.Bibliotheque;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Biblio.Pages
+namespace Biblio.Pages;
+
+public class biblio1Model : PageModel
 {
-    public class biblio1 : PageModel
-    {
-        private readonly ILogger<biblio1> _logger;
+    private readonly bibliothequeContext context;
 
-        public biblio1(ILogger<biblio1> logger)
-        {
-            _logger = logger;
-        }
-
-        public static void aff(){
-            Console.WriteLine("azddzd");
-        }
-
-        public IActionResult OnPost(){
-            return RedirectToPage();
-        }
-
-        public string TimeOfDay { get; set; }
-        public void OnGet()
-        {
-            TimeOfDay = "evening";
-            if(DateTime.Now.Hour < 18){
-                TimeOfDay = "afternoon";
-            }
-            if(DateTime.Now.Hour < 12){
-                TimeOfDay = "morning";
-            }
-        }
+    public biblio1Model(bibliothequeContext context)=>
+        this.context=context;
     
+        
+    public List<Livre> Livres { get; set; } = new ();
+
+    // Permet d'afficher le contenu dans la page
+    public async Task OnGetAsync()=>
+        Livres = await context.Livres.ToListAsync();
+
+    // permet de lié livre_new au fichier cshtml
+    [BindProperty]
+    public Livre livre_new {get;set;}
+
+    // cette methode s'active quand la methode Post est activée ( bouton ajouter)
+    public IActionResult OnPost(){
+        context.Livres.Add(livre_new);
+        
+        context.SaveChanges();
+        return RedirectToPage();
     }
+    
 }
+
+
+//    public string TimeOfDay { get; set; }
+// public void OnGet()
+        // {
+        //     TimeOfDay = "evening";
+        //     if(DateTime.Now.Hour < 18){
+        //         TimeOfDay = "afternoon";
+        //     }
+        //     if(DateTime.Now.Hour < 12){
+        //         TimeOfDay = "morning";
+        //     }
+        // }
