@@ -8,7 +8,6 @@ namespace Biblio.Pages;
 public class IndexModel : PageModel
 {
     private readonly bibliothequeContext context;
-
     public IndexModel(bibliothequeContext context)=>
         this.context=context;
     

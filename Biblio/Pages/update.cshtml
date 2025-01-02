@@ -1,0 +1,30 @@
+@page "{id:int}"
+@model Biblio.Pages.updateModel
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Enter new data</h1>
+<h1>@TempData["Message"]</h1>
+<h2>@Model.Message</h2>
+
+<div>
+    <form method="post">
+    @* Attention: fait en sorte que name est suivi du nom de parametre qui convient (attention aux erreure d'ortographes) *@
+    <input type="text" name="Titre" value="@Model.Livre.Titre"/>
+    <input type="text" name="Auteur" value="@Model.Livre.Auteur"/>
+    <input type="text" name="date_Publication" value="@Model.Livre.Date_Publication"/>
+    <br/>
+    <button type="submit">Mettre à jour</button>
+   
+    </form>
+
+    @* @if (ViewData["Message"] != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewData["Message"]");
+            };
+        </script>
+    } *@
+</div>

@@ -8,7 +8,7 @@ a.navbar-brand[b-vlz62m3fqd] {
 }
 
 a[b-vlz62m3fqd] {
-  color: #0077cc;
+  color: #d61b1b;
 }
 
 .btn-primary[b-vlz62m3fqd] {
@@ -53,4 +53,13 @@ html[b-vlz62m3fqd]{
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+}
+
+.contenu[b-vlz62m3fqd]{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: space-evenly;
+  font-size: small;
 }

@@ -1,0 +1,9 @@
+Cas 1:
+la commande "dotnet add package Microsoft.EntityFrameworkCore.Sqlite" ne marchait pas et renvoyait une erreure
+Solution : 
+le fichier NuGet.config avec son contenu
+
+Cas 2 :
+ViewData["Message"] qui ne s'affichait dans la page update.cshtml après avoir mis à jour un livre meme si la condition était réalisait
+Solution : 
+utiliser TempData au lieu de ViewData 

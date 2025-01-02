@@ -8,7 +8,7 @@ a.navbar-brand {
 }
 
 a {
-  color: #0077cc;
+  color: #d61b1b;
 }
 
 .btn-primary {
@@ -53,4 +53,13 @@ html{
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+}
+
+.contenu{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: space-evenly;
+  font-size: small;
 }

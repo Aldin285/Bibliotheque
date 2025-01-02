@@ -7,14 +7,18 @@
 <div class="row">
     @foreach (var LIVRE in Model.Livres)
     {
-        <div class="col-3 p-1">
+        <div class="col-3 p-2">
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">@LIVRE.Titre</h5>
                     <p class="card-text">@LIVRE.Auteur</p>
-                    <div class="d-flex justify-content-between">
-                    <span class="card-text">@LIVRE.Date_Publication</span>
-                    <a class="btn btn-danger btn-sm" asp-page="/Order" asp-route-id="@LIVRE.Id">Order Now</a>
+                    <div class="contenu">
+                        <span class="card-text">@LIVRE.Date_Publication</span>
+                        <br/>
+                        @* crée un bouton qui renvoie à la page update avec l'id  *@
+                        <a class="btn btn-danger btn-sm" asp-page="/update" asp-route-id="@LIVRE.Id">Modifier</a>
+                        
+                        <a class="btn btn-danger btn-sm" asp-page="/delete" asp-route-id="@LIVRE.Id">Supprimer</a>
                     </div>
                 </div>
             </div>
