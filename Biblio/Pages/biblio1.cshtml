@@ -1,7 +1,7 @@
 @page
 @model Biblio.Pages.biblio1Model
 @{
-    ViewData["Title"] = "La bibliothèque";
+    ViewData["Title"] = "Ajouter";
 
 }
 <h1>@ViewData["Title"]</h1>
@@ -9,8 +9,8 @@
 <form method="post">
     @* Attention: fait en sorte que name est suivi du nom de parametre qui convient (attention aux erreure d'ortographes) *@
     @* Pas besoin d'ajouter Id car ça ce fait automatiquement *@
-    <input type="text" name="Titre"/>
-    <input type="text" name="Auteur"/>
+    <input type="text" name="Titre" placeholder="Titre..."/>
+    <input type="text" name="Auteur" placeholder="Auteur..."/>
     <input type="date" name="date_Publication"/>
 
     <button type="submit">Ajouter</button>

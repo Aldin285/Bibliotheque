@@ -8,27 +8,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='/../wwwroot/css/site.css'>
+    <link rel="stylesheet" href='/css/site.css'>
 
-    @* <style>
-       body{
-        background-image: url('/Biblio/photo/vegeta.jpg') no-repeat center center fixed; 
+    <style>
+       html body{
+        background-image: url('/wwwroot/photo/vegeta.jpg') no-repeat center center fixed !important; 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         }
-    </style> *@
+    </style>
     
 
 </head>
 
 <body>
- <script>
-        function changeBackground() {
-            document.body.style.backgroundImage = "url('/Biblio/photo/vegeta.jpg')";
-        }
-    </script>
-
     <h1 class="fw-light"><Label>la bibliothèqe</Label></h1>
 <div class="row">
     @foreach (var LIVRE in Model.Livres)

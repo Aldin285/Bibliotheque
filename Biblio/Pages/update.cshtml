@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8"/>
 </head>
-<h1>Enter new data</h1>
+<h1>Modifier</h1>
 
 @* <h1>@TempData["Message"]</h1> *@
 
@@ -20,7 +20,7 @@
     <input type="text" name="Auteur" value="@Model.Livre.Auteur"/>
     <input type="date" name="date_Publication" value="@Model.Livre.Date_Publication"/>
     <br/>
-    <button type="submit">Mettre à jour</button>
+    <button type="submit" class="btn btn-danger btn-sm">Mettre à jour</button>
    
     </form>
     @* Affiche une pop-up quand une modification est effectuée *@
