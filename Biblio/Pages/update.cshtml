@@ -3,9 +3,14 @@
 @{
     ViewData["Title"] = "Update";
 }
-
+<head>
+    <meta charset="utf-8"/>
+</head>
 <h1>Enter new data</h1>
-<h1>@TempData["Message"]</h1>
+
+@* <h1>@TempData["Message"]</h1> *@
+
+@* la ligne suivante ne marche pas *@
 <h2>@Model.Message</h2>
 
 <div>
@@ -13,11 +18,21 @@
     @* Attention: fait en sorte que name est suivi du nom de parametre qui convient (attention aux erreure d'ortographes) *@
     <input type="text" name="Titre" value="@Model.Livre.Titre"/>
     <input type="text" name="Auteur" value="@Model.Livre.Auteur"/>
-    <input type="text" name="date_Publication" value="@Model.Livre.Date_Publication"/>
+    <input type="date" name="date_Publication" value="@Model.Livre.Date_Publication"/>
     <br/>
     <button type="submit">Mettre à jour</button>
    
     </form>
+    @* Affiche une pop-up quand une modification est effectuée *@
+    @* le if est utilisé pour éviter que une pop-up vide s'affiche quand on ouvre la page *@
+    @if (TempData["Message"] != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@TempData["Message"]");
+            };
+        </script>
+    }
 
     @* @if (ViewData["Message"] != null)
     {

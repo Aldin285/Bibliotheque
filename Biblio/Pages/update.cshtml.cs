@@ -33,10 +33,10 @@ public class updateModel : PageModel
     public IActionResult OnPost(Livre livre){
         Un_Livre = Update(livre);
         
-        return RedirectToPage();
+        return RedirectToPage("/Index");
     }
 
-// variable pour afficher un message de succès ou d'erreure
+// variable pour afficher un message de succès ou d'erreure (ne marche pas)
  public string Message { get; set; }
  
 
@@ -54,9 +54,9 @@ public class updateModel : PageModel
             livre.Titre=livre_updated.Titre;
             livre.Auteur=livre_updated.Auteur;
             livre.Date_Publication=livre_updated.Date_Publication;
-            TempData["Message"]="Informations mis à jour";
+            TempData["Message"]="Informations a jour";
             // TempData.Keep("Message");
-            Message="INFOS mis à jour";
+            Message="INFOS mises à jour";
             context.SaveChanges();
             
         }else{

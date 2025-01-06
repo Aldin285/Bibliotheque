@@ -3,7 +3,33 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<h1 class="fw-light"><Label>la bibliotheqe</Label></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/../wwwroot/css/site.css'>
+
+    @* <style>
+       body{
+        background-image: url('/Biblio/photo/vegeta.jpg') no-repeat center center fixed; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+    </style> *@
+    
+
+</head>
+
+<body>
+ <script>
+        function changeBackground() {
+            document.body.style.backgroundImage = "url('/Biblio/photo/vegeta.jpg')";
+        }
+    </script>
+
+    <h1 class="fw-light"><Label>la bibliothèqe</Label></h1>
 <div class="row">
     @foreach (var LIVRE in Model.Livres)
     {
@@ -18,10 +44,22 @@
                         @* crée un bouton qui renvoie à la page update avec l'id  *@
                         <a class="btn btn-danger btn-sm" asp-page="/update" asp-route-id="@LIVRE.Id">Modifier</a>
                         
-                        <a class="btn btn-danger btn-sm" asp-page="/delete" asp-route-id="@LIVRE.Id">Supprimer</a>
+                        <a class="btn btn-danger btn-sm" asp-page="/Delete" asp-route-id="@LIVRE.Id">Supprimer</a>
+                        @* <form method="post"><button type="submit" class="btn btn-danger btn-sm" asp-route-itemid="@LIVRE.Id" > Supprimer</button></form> *@
                     </div>
                 </div>
             </div>
         </div>
     }
 </div>
+
+@if (TempData["Message"] != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@TempData["Message"]");
+            };
+        </script>
+    }
+</body>
+</html>

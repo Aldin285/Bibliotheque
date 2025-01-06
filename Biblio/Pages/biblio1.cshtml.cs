@@ -33,29 +33,15 @@ public class biblio1Model : PageModel
     // cette methode s'active quand la methode Post est activée ( bouton ajouter)
     public IActionResult OnPost(){
         context.Livres.Add(livre_new);
-        // foreach(var LIVRE in Livres){
-        //     if(LIVRE.Id==livre_new.Id){
-        //         Erreure="Erreure: l'ID saisie est utilisé ";
-        //         return RedirectToPage();
-        //     }else{
-
-        //     }
-        // }
-        context.SaveChanges();
+        if (livre_new.Auteur != null && livre_new.Date_Publication != null &&livre_new.Titre != null ){
+            
+            context.SaveChanges();
+            TempData["Message"]=$"Le livre {Request.Form["Titre"]} est ajoutee avec succes";
+        }else{
+            TempData["Message"]=$"Veiller remplir toutes les cases";
+        }
+        
         return RedirectToPage();
     }
     
 }
-
-
-//    public string TimeOfDay { get; set; }
-// public void OnGet()
-        // {
-        //     TimeOfDay = "evening";
-        //     if(DateTime.Now.Hour < 18){
-        //         TimeOfDay = "afternoon";
-        //     }
-        //     if(DateTime.Now.Hour < 12){
-        //         TimeOfDay = "morning";
-        //     }
-        // }

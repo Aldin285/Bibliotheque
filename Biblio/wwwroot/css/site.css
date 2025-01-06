@@ -34,12 +34,13 @@ body {
 }
 
 /* ne peux pas modifier l'arrierre plan? */
-html{
-  background: url(../../../photo/vegeta.jpg) no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+body{
+  background-image: url('/Biblio/wwwroot/photo/vegeta.jpg') no-repeat center center fixed; 
+  /* background-image: url('/Biblio/wwwroot/css/site.css') no-repeat center center fixed;  */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Pour enlever la fleche dans l'input number (saisie d'id) */

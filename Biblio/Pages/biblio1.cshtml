@@ -8,15 +8,16 @@
 
 <form method="post">
     @* Attention: fait en sorte que name est suivi du nom de parametre qui convient (attention aux erreure d'ortographes) *@
-    <input type="number" name="Id"/>
+    @* Pas besoin d'ajouter Id car ça ce fait automatiquement *@
     <input type="text" name="Titre"/>
     <input type="text" name="Auteur"/>
-    <input type="text" name="date_Publication"/>
+    <input type="date" name="date_Publication"/>
 
     <button type="submit">Ajouter</button>
 
 </form>
 
+@* le tableau affichant les éléments de la base de données *@
 <table class="table">
     <thead>
         <tr>
@@ -39,19 +40,13 @@
 
 </table>
 
-
-    @* @foreach (var LIVRE in Model.Livres)
+@* affiche une pop-up pour confirmer l'ajout d'un livre ou afficer une erreure *@
+@if (TempData["Message"] != null)
     {
-        <div class="col-3 p-1">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">@LIVRE.Titre</h5>
-                    <p class="card-text">@LIVRE.Auteur</p>
-                    <div class="d-flex justify-content-between">
-                    <span class="card-text">@LIVRE.Date_Publication</span>
-                    <a class="btn btn-danger btn-sm" asp-page="/Order" asp-route-id="@LIVRE.Id">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    } *@
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@TempData["Message"]");
+            };
+        </script>
+    }
+</script>

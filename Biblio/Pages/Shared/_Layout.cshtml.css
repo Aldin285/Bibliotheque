@@ -47,13 +47,20 @@ button.accept-policy {
   line-height: 60px;
 }
 
-html{
-  background: url(../../../photo/vegeta.jpg) no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
+body{
+  background-image: url('../../../photo/vegeta.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  html{
+    background-image: url('../../../photo/vegeta.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
 
 .contenu{
   display: flex;

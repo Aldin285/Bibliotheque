@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U3QqGET0WOgalXJmDiv/F12dhuP/CBDy62FOjAmiWQk=",
+  "Hash": "BL1rDU8ha+lCOrC5F7Qq+IgiU2LGKtYq2IQ0RoSWLzY=",
   "Source": "Biblio",
   "BasePath": "_content/Biblio",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio\\wwwroot\\photo\\vegeta.jpg",
+      "SourceId": "Biblio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alla-Eddine.Boukabou\\Documents\\GitHub\\Bibliotheque\\Biblio\\wwwroot\\",
+      "BasePath": "_content/Biblio",
+      "RelativePath": "photo/vegeta.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo\\vegeta.jpg"
     }
   ]
 }
