@@ -33,10 +33,11 @@ namespace Biblio.Bibliotheque{
                 XmlSerializer xs = new XmlSerializer (typeof(Livre));
                 StringWriter sw = new StringWriter();
                 
-              ajout_livre(livre);
+            //   ajout_livre();
             //   get_livres();
                 // get_livre();
                 // suppression_livre(1);
+                Intro();
                 
             }catch (Exception e){
                 Console.WriteLine($"ERREUR: {e.Message}");
@@ -47,8 +48,47 @@ namespace Biblio.Bibliotheque{
         const string xmlfile = "bibliotheque.xml";
 
         // fonction pour ajouter un livre au fichier xml
-        public static void ajout_livre(Livre book){
+        public static void Intro(){
+         
+            int etat = 0;
             
+            while(etat!=1){
+                Console.WriteLine($"----------------");
+                Console.WriteLine("Bonjour, Que voulez-vous faire? (veiller selectionner un numéro)");
+                Console.WriteLine($"----------------");
+                Console.WriteLine($"1-Ajouter un livre");
+                Console.WriteLine($"2-Afficher tout les livres");
+                Console.WriteLine($"3-Rechercher un livre");
+                Console.WriteLine($"4-Supprimer un livre");
+                Console.WriteLine($"5-Quitter");
+                int choix = Convert.ToInt32(Console.ReadLine());
+
+                if(choix==1){
+                    ajout_livre();
+                }else if(choix==2){
+                    get_livres();
+                }else if(choix==3){
+                    get_livre();
+                }else if(choix==4){
+                    suppression_livre();
+                }else if(choix==5){
+                    etat=1;
+                }
+            }
+        }
+        public static void ajout_livre( ){
+            Console.WriteLine($"ID:");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Titre:");
+            string titre = Console.ReadLine();
+            Console.WriteLine($"Auteur:");
+            string Auteur = Console.ReadLine();
+            Console.WriteLine($"Date de pubication:");
+            string date = Console.ReadLine();
+
+            Livre book = new Livre(id,titre,Auteur,date);
+            
+
             var xdoc =XDocument.Load(xmlfile);
             var xelement = new XElement("Livre",new XAttribute("ID",book.Id),
                                         new XElement("Titre",book.Titre),
@@ -72,7 +112,9 @@ namespace Biblio.Bibliotheque{
         } 
 
 // fonction pour supprimer un livre au fichier xml par rappot à son ID 
-        public static void suppression_livre(int id){
+        public static void suppression_livre(){
+            Console.WriteLine($"Veiller saisir l'id du livre à supprimer:");
+            int id = Convert.ToInt32(Console.ReadLine());
             var xdoc =XDocument.Load(xmlfile);
             // la partie FirstOrDefault cherche le premier element qui possede le meme id saisie (renvoie null si l'id saisie est introuvable)
             //x represente chaque élément <Livre> du fichier xml

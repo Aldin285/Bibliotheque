@@ -18,7 +18,7 @@
     @* Attention: fait en sorte que name est suivi du nom de parametre qui convient (attention aux erreure d'ortographes) *@
     <input type="text" name="Titre" value="@Model.Livre.Titre"/>
     <input type="text" name="Auteur" value="@Model.Livre.Auteur"/>
-    <input type="date" name="date_Publication" value="@Model.Livre.Date_Publication"/>
+    <input type="date" name="date_Publication" value="@Model.Livre.Date_Publication" id="date_max" min="1455-01-01"/>
     <br/>
     <button type="submit" class="btn btn-danger btn-sm">Mettre à jour</button>
    
@@ -33,13 +33,26 @@
             };
         </script>
     }
-
-    @* @if (ViewData["Message"] != null)
-    {
-        <script type="text/javascript">
-            window.onload = function () {
-                alert("@ViewData["Message"]");
-            };
-        </script>
-    } *@
+@* Pour faire en sorte que la date max qui peut être saisit soie aujourd'hui *@
+<script>
+        const d = new Date();
+        var day= d.getDate();
+        var day_tommorow= d.getDate()+1;
+        if (day<10){
+            day="0"+day;
+        }
+        if (day_tommorow<10){
+            day_tommorow="0"+day_tommorow;
+        }
+        var mois=d.getMonth()+1;
+        if (mois<10){
+            mois="0"+mois;
+        }
+        var annee=d.getFullYear();
+        var today=annee+"-"+mois+"-"+day;
+        var tommorow=annee+"-"+mois+"-"+day_tommorow;
+        document.getElementById("date_max").max = today;
+        @* document.getElementById("date_max").min = tommorow; *@
+   
+    </script>
 </div>

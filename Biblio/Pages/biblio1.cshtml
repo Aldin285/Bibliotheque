@@ -11,7 +11,7 @@
     @* Pas besoin d'ajouter Id car ça ce fait automatiquement *@
     <input type="text" name="Titre" placeholder="Titre..."/>
     <input type="text" name="Auteur" placeholder="Auteur..."/>
-    <input type="date" name="date_Publication"/>
+    <input type="date" name="date_Publication" id="date_max" min="1455-01-01/>
 
     <button type="submit">Ajouter</button>
 
@@ -49,4 +49,26 @@
             };
         </script>
     }
-</script>
+
+@* Pour faire en sorte que la date max qui peut être saisit soie aujourd'hui *@
+<script>
+        const d = new Date();
+        var day= d.getDate();
+        var day_tommorow= d.getDate()+1;
+        if (day<10){
+            day="0"+day;
+        }
+        if (day_tommorow<10){
+            day_tommorow="0"+day_tommorow;
+        }
+        var mois=d.getMonth()+1;
+        if (mois<10){
+            mois="0"+mois;
+        }
+        var annee=d.getFullYear();
+        var today=annee+"-"+mois+"-"+day;
+        var tommorow=annee+"-"+mois+"-"+day_tommorow;
+        document.getElementById("date_max").max = today;
+        @* document.getElementById("date_max").min = tommorow; *@
+   
+    </script>
